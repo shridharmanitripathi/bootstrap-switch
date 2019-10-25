@@ -1,2 +1,2 @@
 # bootstrap-switch
-Custom Bootsratp Switch
+Custom Bootsratp Switch in Cards extending the Bootstrap Switch functionality
