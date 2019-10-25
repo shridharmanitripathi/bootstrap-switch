@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Bootsrap Custom Switch</title>
+      <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   </head>
+   <body>
+   </body>
+</html>
+<style type="text/css">
+   /* The box around the slider */
+   .switch {
+   position: relative;
+   display: inline-block;
+   width: 60px;
+   height: 34px;
+   float:right;
+   }
+   /*/* To hide  the default HTML checkbox */
+   .switch input {display:none;}
+   /* Slider CSS */
+   .slider {
+   position: absolute;
+   cursor: pointer;
+   top: 2px;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background-color: #ccc;
+   -webkit-transition: .4s;
+   transition: .4s;
+   }
+   .slider:before {
+   position: absolute;
+   content: "";
+   height: 26px;
+   width: 26px;
+   left: 4px;
+   bottom: 4px;
+   background-color: white;
+   -webkit-transition: .4s;
+   transition: .4s;
+   }
+   input.custom-color:checked + .slider {
+   background-color: #43a742;
+   }
+   input:focus + .slider {
+   box-shadow: 0 0 1px #2196F3;
+   }
+   input:checked + .slider:before {
+   -webkit-transform: translateX(27px);
+   -ms-transform: translateX(27px);
+   transform: translateX(27px);
+   }
+   /* Rounded sliders */
+   .slider.round {
+   border-radius: 34px;
+   }
+   .slider.round:before {
+   border-radius: 50%;
+   }
+</style>
+<div class="container">
+   <!-- Default panel contents -->
+   <div class="container">
+      <div class="row">
+         <div class="col-md-6">
+            <div class="card" style="margin:50px 0">
+               <!-- Default panel contents -->
+               <div class="card-header">Checkbox to Round Switch</div>
+               <ul class="list-group list-group-flush">
+                  <li class="list-group-item">
+                     Bootstrap Switch Success 
+                     <label class="switch ">
+                     <input type="checkbox" class="custom-color">
+                     <span class="slider round"></span>
+                     </label>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
