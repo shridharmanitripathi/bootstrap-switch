@@ -1,4 +1,30 @@
 ---
 label: Highlights
 hide_body: true
-fields: []
+fields:
+- name: highlights
+  type: field_group_list
+  config:
+    min: 3
+    max: 
+    labelField: 
+  label: Highlights
+- name: headline
+  type: text
+  config:
+    required: true
+  label: Headline
+- name: description
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: Description
+- name: url
+  type: text
+  config:
+    required: false
+  label: URL
