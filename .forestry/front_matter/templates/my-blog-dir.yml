@@ -1,4 +1,13 @@
 ---
 label: my blog dir
 hide_body: false
-fields: []
+fields:
+- name: my_custom_label
+  type: datetime
+  label: My custom Label
+  description: ''
+  config:
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: false
