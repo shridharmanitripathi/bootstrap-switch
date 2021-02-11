@@ -6,9 +6,11 @@ webhook_url:
 sections:
 - type: directory
   path: mydir
-  label: My Directory
+  label: Pages
   create: all
   match: "**/*"
+  templates:
+  - page
 - type: directory
   path: mycustomlabel
   label: My Custom Label
