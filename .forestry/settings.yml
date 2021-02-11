@@ -5,6 +5,11 @@ admin_path:
 webhook_url: 
 sections:
 - type: directory
+  path: mydir
+  label: My Directory
+  create: all
+  match: "**/*"
+- type: directory
   path: mycustomlabel
   label: My Custom Label
   create: all
